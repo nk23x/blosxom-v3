@@ -1,0 +1,8 @@
+jobs:
+  build:
+    docker:
+      - image: nk23x1/dockerhub-public:mail_api_dockerized_imapapi_1
+    steps:
+      - run: lsof -i4 -a -p
+
+      
